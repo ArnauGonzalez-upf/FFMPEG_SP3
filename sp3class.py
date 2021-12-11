@@ -98,7 +98,7 @@ class SP3Class:
             value = int(ip_selected_split[i])
             if (len(ip_selected_split) != 4) or (i == 0 and not 224 <= int(ip_selected_split[0]) <= 239) or \
                     (value > 255 or value < 0):
-                print("ERROR: Range must be in 224.0.0.0 and 239.255.255.255")
+                print("ERROR: IP range is between 224.0.0.0 and 239.255.255.255")
                 return
         # Set IP
         self.ip = ip_selected
